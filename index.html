@@ -96,8 +96,11 @@ title: Home
             }
 
             #splash-avatar {
-                content: "";
                 height: 60%;
+            }
+
+            #splash-avatar img {
+                height: 100%;
                 width: auto;
                 box-sizing: border-box;
                 object-fit: contain;
@@ -186,10 +189,10 @@ title: Home
     <body>
         <div id="background"></div>
         <div id="content">
-            <a id="splash" href="./">
-                <img id="splash-avatar" src="{{ site.avatar }}">
+            <div id="splash">
+                <a id="splash-avatar" href="./"><img src="{{ site.avatar }}"></a>
                 <div id="splash-username">{{ site.title }}</div>
-            </a>
+            </div>
             <div id="accounts">
                 {% assign accounts = site.accounts | reverse %}
                 {% for account in site.accounts %}
