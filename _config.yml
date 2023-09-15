@@ -18,3 +18,7 @@ accounts:
     name: Instagram
     url: https://instagram.com/rosalinairl
     icon: instagram.svg
+  -
+    name: Bluesky
+    url: https://bsky.app/profile/rosalinairl.bsky.social
+    icon: bluesky.svg
