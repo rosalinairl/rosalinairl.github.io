@@ -1,0 +1,41 @@
+<svg viewBox="-11.5 -11.5 23 23" stroke="black" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path id="star-point" class="stroke" d="M -3.526711513754839,-4.854101966249685                                                 Q 0,-15.70820393249937 3.526711513754839,-4.854101966249685"/>
+        
+        <symbol id="star-letter" class="stroke" overflow="visible">
+            <use xlink:href="#star-point"/>
+            <path d="M -3.5,-3 L 3.5,-3 M -3.526711513754839,-4.854101966249685                      L -5.70633909777,1.8541019662496845                      M 3.526711513754839,-4.854101966249685                      L 5.70633909777,1.8541019662496845"/>
+        </symbol>
+
+        <mask id="star-mask" class="stroke4" overflow="visible">
+            <rect x="-20" y="-20" width="40" height="40" fill="white"/>
+            <use xlink:href="#star-letter" stroke="black"/>
+        </mask>
+
+        <symbol id="star" class="stroke2" mask="url(#star-mask)" overflow="visible">
+            <use xlink:href="#star-point"/>
+            <use xlink:href="#star-point" transform="rotate(72)"/>
+            <use xlink:href="#star-point" transform="rotate(144)"/>
+            <use xlink:href="#star-point" transform="rotate(216)"/>
+            <use xlink:href="#star-point" transform="rotate(288)"/>
+        </symbol>
+    </defs>
+
+    <style>
+        .stroke {
+            stroke-linecap: round;
+            fill: none;
+        }
+
+        .stroke2 {
+            stroke-width: 2;
+        }
+
+        .stroke4 {
+            stroke-width: 4;
+        }
+    </style>
+
+    <use xlink:href="#star"/>
+    <use xlink:href="#star-letter" class="stroke2"/>
+</svg>
