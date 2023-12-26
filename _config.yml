@@ -22,7 +22,3 @@ accounts:
     name: bluesky
     url: https://bsky.app/profile/rosalinairl.bsky.social
     icon: bluesky.svg
-  -
-    name: last.fm
-    url: https://last.fm/user/rosalinairI
-    icon: lastfm.svg
