@@ -7,8 +7,12 @@ accounts:
     url: https://twitter.com/rosalinairl
     icon: twitter.svg
   -
-    name: youtube
-    url: https://youtube.com/@rosalinairl
+    name: youtube (general videos)
+    url: https://www.youtube.com/channel/UC-atgGWtvHFat4z2eaPqzeQ
+    icon: youtube.svg
+  -
+    name: youtube (ytpmv)
+    url: https://www.youtube.com/channel/UCROkaAoBA2huDt76FytJFFg
     icon: youtube.svg
   -
     name: twitch
