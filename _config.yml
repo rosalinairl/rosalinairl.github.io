@@ -1,28 +1,15 @@
-title: rosalinairl
-avatar: https://www.gravatar.com/avatar/30a1018d19fd564c2f7ab690f29bc43d?s=640
+title: "rosalinairl"
+avatar: "https://www.gravatar.com/avatar/30a1018d19fd564c2f7ab690f29bc43d?s=640"
 
-accounts:
-  -
-    name: twitter
-    url: https://twitter.com/rosalinairl
-    icon: twitter.svg
-  -
-    name: youtube (general videos)
-    url: https://www.youtube.com/channel/UC-atgGWtvHFat4z2eaPqzeQ
-    icon: youtube.svg
-  -
-    name: youtube (ytpmv)
-    url: https://www.youtube.com/channel/UCROkaAoBA2huDt76FytJFFg
-    icon: youtube.svg
-  -
-    name: twitch
-    url: https://twitch.tv/rosalinairl
-    icon: twitch.svg
-  -
-    name: instagram
-    url: https://instagram.com/rosalinairl
-    icon: instagram.svg
-  -
-    name: bluesky
-    url: https://bsky.app/profile/rosalinairl.bsky.social
-    icon: bluesky.svg
+collections_dir: "_collections"
+collections:
+  accounts:
+    output: true
+    sort_by: "id"
+    permalink: "/:path/"
+
+defaults:
+  - scope:
+      type: "accounts"
+    values:
+      layout: "redirect"

@@ -141,6 +141,7 @@ title: Home
                 transition: none 0.25s ease;
                 transition-property: border-color, color, font-size;
                 text-align: center;
+                text-transform: lowercase;
             }
 
             .account:hover {
@@ -194,9 +195,8 @@ title: Home
                 <div id="splash-username">{{ site.title }}</div>
             </div>
             <div id="accounts">
-                {% assign accounts = site.accounts | reverse %}
                 {% for account in site.accounts %}
-                    <a class="account" href="{{account.url}}" style="--icon: url(/assets/images/icons/{{ account.icon }})">{{ account.name }}</a>
+                    <a class="account" href="{{account.redirect}}" style="--icon: url(/assets/images/icons/{{ account.icon }})">{{ account.title }}</a>
                 {% endfor %}
             </div>
         </div>
